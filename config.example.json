@@ -1,0 +1,83 @@
+{
+  "student_profile": {
+    "year": "penultimate",
+    "target_locations": ["Hong Kong", "Remote"],
+    "target_roles": [
+      "summer internship",
+      "internship programme",
+      "data analyst",
+      "business analyst",
+      "finance intern",
+      "marketing intern"
+    ],
+    "preferred_keywords": [
+      "year 3",
+      "year 4",
+      "penultimate",
+      "undergraduate",
+      "summer internship",
+      "internship programme"
+    ],
+    "avoid_keywords": [
+      "permanent",
+      "senior",
+      "experienced hire",
+      "minimum 2 years",
+      "3 years of experience"
+    ],
+    "blocked_keywords": [
+      "insurance",
+      "bancassurance",
+      "financial adviser",
+      "financial planner"
+    ]
+  },
+  "sources": {
+    "imap_email": [
+      {
+        "name": "University career emails",
+        "type": "hku_cdt_email",
+        "host": "imap.gmail.com",
+        "mailbox": "INBOX",
+        "since_days": 14,
+        "max_messages": 20,
+        "username": "YOUR_EMAIL@example.com",
+        "password_env": "INTERNSHIP_EMAIL_PASSWORD",
+        "text_contains": "Internship and Graduate Job Opportunities",
+        "source_priority_bonus": 18
+      },
+      {
+        "name": "LinkedIn job emails",
+        "type": "linkedin_email",
+        "host": "imap.gmail.com",
+        "mailbox": "INBOX",
+        "since_days": 14,
+        "max_messages": 50,
+        "username": "YOUR_EMAIL@example.com",
+        "password_env": "INTERNSHIP_EMAIL_PASSWORD",
+        "text_contains": "linkedin.com/jobs",
+        "source_priority_bonus": 10
+      },
+      {
+        "name": "Job-board alert emails",
+        "type": "job_alert_email",
+        "host": "imap.gmail.com",
+        "mailbox": "INBOX",
+        "from": "JOB_BOARD_SENDER@example.com",
+        "since_days": 14,
+        "max_messages": 50,
+        "username": "YOUR_EMAIL@example.com",
+        "password_env": "INTERNSHIP_EMAIL_PASSWORD",
+        "tracking_domains": ["TRACKING_DOMAIN.example.com"],
+        "job_keywords": ["intern", "internship", "summer", "analyst", "trainee"],
+        "source_priority_bonus": 0
+      }
+    ]
+  },
+  "scoring": {
+    "excellent_threshold": 75,
+    "good_threshold": 55,
+    "hku_source_priority_bonus": 18,
+    "max_jobs_in_report": 30
+  }
+}
