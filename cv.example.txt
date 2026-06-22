@@ -1,0 +1,10 @@
+EDUCATION
+University student, expected graduation 2028
+Relevant coursework: statistics, finance, programming, data analysis
+
+EXPERIENCE
+Analysed market and operational data to identify trends and communicate recommendations.
+Built small automation projects using Python and AI coding agents.
+
+SKILLS
+Python, Excel, SQL, data analysis, research, presentation
