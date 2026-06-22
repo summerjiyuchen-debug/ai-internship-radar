@@ -1,0 +1,12 @@
+config.json
+cv.txt
+.env
+*.eml
+__pycache__/
+*.pyc
+data/
+debug_pages/
+reports/
+*.log
+.DS_Store
+Thumbs.db
